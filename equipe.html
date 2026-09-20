@@ -19,24 +19,37 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
     <style>
-        /* Ajustement du bouton LinkedIn pour une visibilité parfaite et contrastée */
-        .team-member .linkedin-link {
-            background-color: #0a66c2 !important;
+        /* Styles pour les boutons sociaux (LinkedIn & Facebook) */
+        .member-socials {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+        .social-btn {
             color: #ffffff !important;
             font-weight: bold;
+            font-size: 12px;
             border-radius: 50%;
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            z-index: 5;
+            transition: transform 0.2s ease;
         }
-        .team-member .linkedin-link:hover {
-            background-color: #004182 !important;
+        .social-btn:hover {
             transform: scale(1.1);
+        }
+        .linkedin-btn {
+            background-color: #0a66c2 !important;
+        }
+        .facebook-btn {
+            background-color: #1877f2 !important;
         }
     </style>
 </head>
@@ -92,7 +105,9 @@
             <!-- Jean-Lucien -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/jean-lucien.jpg" alt="Jean-Lucien - Président">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/jean-lucien-fouf-kagna-grebaye/?locale=fr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Jean-Lucien">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/jean-lucien-fouf-kagna-grebaye/?locale=fr" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Jean-Lucien">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Jean-Lucien</h3>
                     <p>Président &amp; Représentant légal</p>
@@ -103,7 +118,9 @@
             <!-- Nada Idris -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/nada-idris.jpg" alt="Nada Idris - Secrétaire Générale">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/nada-edres-218731143/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Nada Idris">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/nada-edres-218731143/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Nada Idris">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Nada Idris</h3>
                     <p>Secrétaire Générale</p>
@@ -114,7 +131,9 @@
             <!-- Marvin Kabuye -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/marvin-kabuye.jpg" alt="Marvin Kabuye - Trésorier">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/kabuye-marvin-9a5790213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Marvin Kabuye">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/kabuye-marvin-9a5790213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Marvin Kabuye">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Marvin Kabuye</h3>
                     <p>Trésorier Général</p>
@@ -125,7 +144,9 @@
             <!-- Amina Kanani -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/amina-kanani.jpg" alt="Amina Kanani - Directrice des Programmes">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/christelle-amina-3a3578251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Amina Kanani">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/christelle-amina-3a3578251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Amina Kanani">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Amina Kanani</h3>
                     <p>Directrice des Programmes &amp; Urgences</p>
@@ -136,7 +157,9 @@
             <!-- Gaousso Binate -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/gaousso-binate.jpg" alt="Gaousso Binate - Partenariats">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/gaoussou-binate-207a66208/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gaousso Binate">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/gaoussou-binate-207a66208/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gaousso Binate">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Gaousso Binate</h3>
                     <p>Directeur des Partenariats &amp; Levée de fonds</p>
@@ -147,7 +170,9 @@
             <!-- Charles Patrick Mokwenyei -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/poka.jpg" alt="Charles Patrick Mokwenyei - Communication">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/charles-patrick-mokwenyei-6877a7215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Charles Patrick Mokwenyei">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/charles-patrick-mokwenyei-6877a7215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Charles Patrick Mokwenyei">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Charles Patrick Mokwenyei</h3>
                     <p>Directeur de la Communication &amp; Plaidoyer</p>
@@ -170,7 +195,7 @@
     <!-- GRILLE DES REPRÉSENTANTS NATIONAUX PAR PAYS -->
     <section class="team-section" aria-label="Équipes Nationales">
         <div class="team-grid">
-            <!-- Libye -->
+            <!-- Aisha — Libye -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/aisha.jpg" alt="Aisha - Libye">
                 <div class="member-overlay">
@@ -180,10 +205,12 @@
                 </div>
             </article>
 
-            <!-- Gambie -->
+            <!-- Ebrima Kah — Gambie -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/ebrima-kah.jpg" alt="Ebrima Kah - Gambie">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/ebrima-kah-5840b5210/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ebrima Kah">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/ebrima-kah-5840b5210/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ebrima Kah">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Ebrima Kah</h3>
                     <p>Président &amp; Représentant national</p>
@@ -191,9 +218,12 @@
                 </div>
             </article>
 
+            <!-- Sanna M Gibba — Gambie -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/sanna-m-gibba.jpg" alt="Sanna M Gibba - Gambie">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/sanna-m-gibba-892236276?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sanna M Gibba">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/sanna-m-gibba-892236276/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Sanna M Gibba">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Sanna M Gibba</h3>
                     <p>Vice-Président &amp; Représentant National Adjoint</p>
@@ -201,9 +231,12 @@
                 </div>
             </article>
 
-            <!-- Soudan du Sud -->
+            <!-- Dau Samuel — Soudan du Sud -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/dau-samuel.jpg" alt="Dau Samuel - Soudan du Sud">
+                <div class="member-socials">
+                    <a class="social-btn facebook-btn" href="https://www.facebook.com/daud.samuel.10" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Dau Samuel">fb</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Dau Samuel</h3>
                     <p>Président &amp; Représentant National</p>
@@ -211,9 +244,12 @@
                 </div>
             </article>
 
-            <!-- Zambie -->
+            <!-- Djouma — Zambie -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/djouma.jpg" alt="Djouma - Zambie">
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/juma-haroon-24b3b0396/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Djouma">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Djouma</h3>
                     <p>Président &amp; Représentant National</p>
@@ -221,9 +257,12 @@
                 </div>
             </article>
 
+            <!-- Mwansa Liliabi — Zambie -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/mwansa-liliabi.jpg" alt="Mwansa Liliabi - Zambie">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/mwansa-lialabi-5530ab253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/mwansa-lialabi-5530ab253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Mwansa Liliabi">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Mwansa Liliabi</h3>
                     <p>Vice-Présidente &amp; Représentante Adjointe</p>
@@ -231,9 +270,12 @@
                 </div>
             </article>
 
-            <!-- Tchad -->
+            <!-- Ousman Ali — Tchad -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/ousman-ali.jpg" alt="Ousman Ali - Tchad">
+                <div class="member-socials">
+                    <a class="social-btn facebook-btn" href="https://www.facebook.com/ibnali.ousmane" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Ousman Ali">fb</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Ousman Ali</h3>
                     <p>Président &amp; Représentant National</p>
@@ -241,7 +283,7 @@
                 </div>
             </article>
 
-            <!-- Burundi -->
+            <!-- Andre Ali — Burundi -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/andre-ali.jpg" alt="Andre Ali - Burundi">
                 <div class="member-overlay">
@@ -251,17 +293,20 @@
                 </div>
             </article>
 
-            <!-- Comores -->
+            <!-- Osama Ali — Comores -->
             <article class="team-member">
-                <img class="member-photo" loading="lazy" src="images/oussama-ali.jpg" alt="Oussama Ali - Comores">
+                <img class="member-photo" loading="lazy" src="images/oussama-ali.jpg" alt="Osama Ali - Comores">
+                <div class="member-socials">
+                    <a class="social-btn facebook-btn" href="https://www.facebook.com/oussamaben.m.ali" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Osama Ali">fb</a>
+                </div>
                 <div class="member-overlay">
-                    <h3>Oussama Ali</h3>
+                    <h3>Osama Ali</h3>
                     <p>Président &amp; Représentant National</p>
                     <span>Comores</span>
                 </div>
             </article>
 
-            <!-- Burkina Faso -->
+            <!-- Ali — Burkina Faso -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/ali-burkina-faso.jpg" alt="Ali - Burkina Faso">
                 <div class="member-overlay">
@@ -271,7 +316,7 @@
                 </div>
             </article>
 
-            <!-- Kenya -->
+            <!-- Norman — Kenya -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/norman.jpg" alt="Norman - Kenya">
                 <div class="member-overlay">
@@ -281,17 +326,20 @@
                 </div>
             </article>
 
-            <!-- Djibouti -->
+            <!-- Ali Mohamed Ahmed — Djibouti -->
             <article class="team-member">
-                <img class="member-photo" loading="lazy" src="images/ali-basha.jpg" alt="Ali Basha - Djibouti">
+                <img class="member-photo" loading="lazy" src="images/ali-basha.jpg" alt="Ali Mohamed Ahmed - Djibouti">
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/ali-mohamed-ahmed-15a17227b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ali Mohamed Ahmed">in</a>
+                </div>
                 <div class="member-overlay">
-                    <h3>Ali Basha</h3>
+                    <h3>Ali Mohamed Ahmed</h3>
                     <p>Président &amp; Représentant National</p>
                     <span>Djibouti</span>
                 </div>
             </article>
 
-            <!-- Afrique du Sud -->
+            <!-- Hayat Abdel — Afrique du Sud -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/hayat-abdel.jpg" alt="Hayat Abdel - Afrique du Sud">
                 <div class="member-overlay">
@@ -301,8 +349,12 @@
                 </div>
             </article>
 
+            <!-- Nkensani — Afrique du Sud -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/nkensani.jpg" alt="Nkensani - Afrique du Sud">
+                <div class="member-socials">
+                    <a class="social-btn facebook-btn" href="https://www.facebook.com/nkhensani.nyathi.2025" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Nkensani">fb</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Nkensani</h3>
                     <p>Co-Représentante &amp; Chargée des Projets</p>
@@ -310,9 +362,12 @@
                 </div>
             </article>
 
-            <!-- Congo-Brazzaville -->
+            <!-- Ygnas — Congo-Brazzaville -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/ygnas.jpg" alt="Ygnas - Congo-Brazzaville">
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/ygnace-carter-lokouako-7916a024a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Ygnas">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Ygnas</h3>
                     <p>Président &amp; Représentant National</p>
@@ -320,9 +375,12 @@
                 </div>
             </article>
 
-            <!-- Ghana -->
+            <!-- Samuel — Ghana -->
             <article class="team-member">
                 <img class="member-photo" loading="lazy" src="images/samuel-ghana.jpg" alt="Samuel - Ghana">
+                <div class="member-socials">
+                    <a class="social-btn linkedin-btn" href="https://www.linkedin.com/in/samuel-yao-brafo-16a70a24a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Samuel">in</a>
+                </div>
                 <div class="member-overlay">
                     <h3>Samuel</h3>
                     <p>Président &amp; Représentant National</p>
@@ -367,6 +425,27 @@
         <p>&copy; 2026 Alliance des Visionnaires Africains. Tous droits réservés.</p>
     </div>
 </footer>
+
+<!-- SCRIPT DE TRADUCTION AUTOMATIQUE SELON LA LANGUE DU TÉLÉPHONE -->
+<div id="google_translate_element" style="display:none;"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        var userLang = navigator.language || navigator.userLanguage;
+        var shortLang = userLang.substring(0, 2);
+        new google.translate.TranslateElement({
+            pageLanguage: 'fr',
+            autoDisplay: false
+        }, 'google_translate_element');
+        setTimeout(function() {
+            var selectField = document.querySelector(".goog-te-combo");
+            if (selectField) {
+                selectField.value = shortLang;
+                selectField.dispatchEvent(new Event('change'));
+            }
+        }, 1000);
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
